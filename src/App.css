@@ -2,13 +2,21 @@
     background-color: #c00025;
     width: 100%;
     max-width: 550px;
+    height: 550px;
     border-radius: 15px;
     border: 2px solid grey;
-    padding-bottom: 25px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
 }
 .display {
     margin-top: 25px;
-    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 125px;
     width: 450px;
     border-radius: 50px;
     color: white;
@@ -20,3 +28,40 @@
     padding-right: 8%;
     font-size: 5.0rem;
   }
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+button{
+    background-color: cornflowerblue;
+    color: khaki;
+    padding: 1rem;
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    width: auto;
+    text-align: center;
+}
+.nums-cont{
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.ops-cont{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    max-height: 40px;
+}
+.specs-cont{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
