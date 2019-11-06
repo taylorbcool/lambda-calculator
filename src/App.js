@@ -35,10 +35,12 @@ class App extends React.Component {
       <Logo />
       <div className="App">
         <Display display={selectedButton} />
-        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
-        <Numbers handle={handleToUpdate.bind(this)} ></Numbers>
-        <Operators/>
         <Specials />
+        {/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+        <div className="btns">
+          <Numbers handle={handleToUpdate.bind(this)} ></Numbers>
+          <Operators/>
+        </div>
       </div>
     </div>
   );
