@@ -1,14 +1,12 @@
 import React from "react";
-import { setState } from "expect/build/jestMatchersObject";
 
-const OperatorButton = (props) => {
-  // console.log(props)
+const OperatorButton = ({operator}) => {
   return (
     <>
-      <div className="btn-cont">
-        <button>{props.char.char}</button>
-      </div>
       {/* Display a button element rendering the data being passed down from the parent container on props */}
+      <button value={operator.value}>
+        {operator.char}
+      </button>
     </>
   );
 };
